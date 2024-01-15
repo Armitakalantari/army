@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* برای اینکه صفحه کوچیک میشه تصویر هم اندازه باشه  */
+/* img{
+  display:block;
+  width: 100%;
+} */
+
+
+
+body {
+    background-color: rgb(180, 202, 211);
+   / 138, 171, 184
+  }
+
+
+  
+  /* header */
+.header {
+  height: 100vh;
+  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./photo/back.JPG) center/cover no-repeat fixed;
+  position: relative;
+}
+
+.name {
+  font-size: 20;
+  outline-style: double;
+ position: absolute;
+ left: 40%;
+ top: 50%;
+ color: rgba(215, 131, 12, 0.911) ;
+}
+  /*end of header */
+ 
+ 
+  /* ================================== */
+  /*part 2 */
+  .content-divider {
+    height: 0.5rem;
+    background:rgba(215, 131, 12, 0.911)
+  }
+  
+  /*end of part 2 */
+  /* ================================== */
+ 
+  .section-center{
+    padding: 4rem 0;
+    width: 85vw;
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+
+
+
+  .about-picture {
+    height: 500px;
+    width: 500px;
+    float: right;
+  }
+ 
+
+ .about-info{
+float: left;
+
+ }
+
+
+  p {
+font-family: initial;
+    font-size: 15px;
+    /* border-style: double; */
+    /* border-color:rgba(215, 131, 12, 0.911);  */
+    /* display: block; */
+    margin: 3;
+    padding: 10;
+  }
+
+
+  .form-content{
+   margin: 10;
+   float: left;
+      
+  }
+
+
+
+
+.footer{
+}
