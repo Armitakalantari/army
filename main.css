@@ -1,33 +1,84 @@
 * {
-  padding: 0;
   margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
 }
-
-
-/* برای اینکه صفحه کوچیک میشه تصویر هم اندازه باشه  */
-/* img{
-  display:block;
-  width: 100%;
-} */
-
-
 
 body {
     background-color: rgb(180, 202, 211);
-   / 138, 171, 184
+   /* 138, 171, 184 */
   }
 
 
   
   /* header */
-.header {
-  height: 100vh;
-  background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url(./photo/back.JPG) center/cover no-repeat fixed;
-  position: relative;
+  
+  .bg-dark{
+    position: fixed;
 }
 
-.name {
+header {
+  position: fixed;
+  height: 4rem;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+}
+  
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    
+    
+  }
+
+    #navbar a{ 
+    color: rgb(255, 174, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: rem;}
+ 
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li a{
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+r ul li a:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+#navbar.icons a {
+  font-size: 3rem;
+  color: black;
+}
+
+
+
+
+
+
+    /* ================================== */
+
+  .name {
   font-size: 20;
   outline-style: double;
  position: absolute;
@@ -44,51 +95,42 @@ body {
     height: 0.5rem;
     background:rgba(215, 131, 12, 0.911)
   }
+  /* ================================== */
+
+  .picture-back{
+    width: 500;
+    height: 500;
+    background:rgba(26, 20, 20, 0.67);
+    /* top: -95%; */
+    /* left: -10%; */
+    /* transform: rotateZ(-15deg) skewX(30deg); */
+    /* border-radius: 0 0 0 10rem; */
+    opacity: 0.9;
+    z-index: 1;
+position: absolute;
+
+}
+ 
+
+
+/* .about-picture-container{
+    position: absolute;
+top: 70;
+left: 70;
+z-index: 2;
+    } */
+
+    .about-picture{
+        position: relative;
+        top: 70;
+        left: 70;
+        z-index: 2;
+        height: 500;
+        width: 500;
+    }
+
+
+
   
   /*end of part 2 */
   /* ================================== */
- 
-  .section-center{
-    padding: 4rem 0;
-    width: 85vw;
-    margin: 0 auto;
-    max-width: 1170px;
-  }
-
-
-
-  .about-picture {
-    height: 500px;
-    width: 500px;
-    float: right;
-  }
- 
-
- .about-info{
-float: left;
-
- }
-
-
-  p {
-font-family: initial;
-    font-size: 15px;
-    /* border-style: double; */
-    /* border-color:rgba(215, 131, 12, 0.911);  */
-    /* display: block; */
-    margin: 3;
-    padding: 10;
-  }
-
-
-  .form-content{
-   margin: 10;
-   float: left;
-      
-  }
-
-
-
-
-.footer{
-}
