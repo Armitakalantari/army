@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root {
+  --blue: #698ea2;
+  --orange:rgba(215, 131, 12, 0.911);
+   /* #e4a576; */
+}  
+
 * {
   margin: 0;
     padding: 0;
@@ -10,123 +19,191 @@
 }
 
 body {
-    background-color: rgb(180, 202, 211);
-   /* 138, 171, 184 */
+    background-color: white;
   }
 
 
   
   /* header */
   
-  .bg-dark{
-    position: fixed;
-}
-
 header {
-  position: fixed;
-  height: 4rem;
-
-  top: 0;
-  left: 0;
-  right: 0;
-  background: white;
-  padding: 2rem 9%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 1000;
-  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
-}
-  
-#navbar {
+    position: fixed;
+    height: 3rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 1rem 9%;
     display: flex;
-    justify-content: space-between;
-    padding: 1rem;
     align-items: center;
-    
-    
-  }
-
-    #navbar a{ 
-    color: rgb(255, 174, 0);
-    background-color: rgb(255, 255, 255);
-    font-size: rem;}
- 
-#navbar ul {
-    display: flex;
-    list-style: none;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
 }
 
-#navbar ul li a{
-    padding: 0.75rem;
-    margin: 0 0.25rem;
+header .logo {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bolder;
 }
 
-r ul li a:hover{
-    background-color: rgb(0, 0, 0);
+header .logo span {
+    color: var(--orange);
 }
 
-#navbar.icons a {
-  font-size: 3rem;
-  color: black;
+header .navbar a {
+    font-size: 1rem;
+    padding: 0 1.5rem;
+    color: #666;
 }
 
+header .navbar a:hover {
+    color: var(--orange);
+}
 
+header .icons a {
+    font-size: 2rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
 
+header .icons a:hover {
+    color: var(--orange);
+}
 
+header #toggler {
+    display: none;
+}
 
-
-    /* ================================== */
+header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: 0.5rem;
+    padding-block-end: 0.5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+   /* ================================== */
+  
+  
+  
+   /* Home */
+ .home{
+  background: url(./photo/back.JPG) no-repeat fixed;
+  background-size: 100%;
+  padding-top: 3rem;
+  background-position: center;
+  align-items: center;
+  min-height: 100vh; 
+  
+}
 
   .name {
-  font-size: 20;
+ font-size: 2.5rem;
   outline-style: double;
- position: absolute;
- left: 40%;
- top: 50%;
- color: rgba(215, 131, 12, 0.911) ;
+  color: rgba(215, 130, 12, 0.474) ;
+  mix-blend-mode: screen;
 }
-  /*end of header */
  
  
   /* ================================== */
-  /*part 2 */
+  /*part 3 */
   .content-divider {
     height: 0.5rem;
     background:rgba(215, 131, 12, 0.911)
   }
   /* ================================== */
+  /*part 4 about me  */
 
-  .picture-back{
-    width: 500;
-    height: 500;
+
+  .heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: #698ea213;
+}
+
+.heading span {
+    color: var(--blue);
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 3rem;
+    background: #333;
+    color: white;
+    padding: 0.9rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background: var(--orange);
+}
+  /* ================================== */
+
+  .about .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+/* .about .row .picture-container{
+    flex:1 1 40rem;
+    position: relative;
+} */
+
+.about .row .content {
+    flex:1 1 40rem;
+    padding-left: 5rem;
+}
+
+.about .row .content h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.about .row .content p {
+    font-size: 1rem;
+    color: #999;
+    padding: 0.5rem 0.5;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    line-height: 1.5;
+    text-align: justify;
+    text-wrap: wrap;
+
+}
+
+
+
+  .about-picture-back{
+    position: relative;
+
+    width: 500px;
+    height: 500px;
     background:rgba(26, 20, 20, 0.67);
-    /* top: -95%; */
-    /* left: -10%; */
-    /* transform: rotateZ(-15deg) skewX(30deg); */
-    /* border-radius: 0 0 0 10rem; */
+    padding-left: 2rem;
     opacity: 0.9;
     z-index: 1;
-position: absolute;
 
 }
  
 
 
-/* .about-picture-container{
-    position: absolute;
-top: 70;
-left: 70;
-z-index: 2;
-    } */
-
     .about-picture{
-        position: relative;
-        top: 70;
-        left: 70;
+        position: absolute;
+        top: 1rem;
+        flex: 1rem 1rem 0
+        width: 500px;
+        height: 500px;
         z-index: 2;
-        height: 500;
-        width: 500;
     }
 
 
